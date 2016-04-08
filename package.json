@@ -1,6 +1,6 @@
 {
   "name": "super-serve",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "watch": "^0.17.1"
   },
   "bin": {
-    "super-serve": "node index.js"
+    "super-serve": "./index.js"
   },
   "repository": { 
     "type": "git",
