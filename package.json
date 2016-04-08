@@ -1,6 +1,6 @@
 {
   "name": "super-serve",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,9 @@
     "jade": "^1.11.0",
     "less": "^2.6.1",
     "node-sass": "^3.4.2",
-    "watch": "^0.17.1"
+    "watch": "^0.17.1",
+    "socket.io":"^1.4.5",
+    "colors":"^1.1.2"
   },
   "bin": {
     "super-serve": "./index.js"
