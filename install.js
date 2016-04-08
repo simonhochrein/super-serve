@@ -1,2 +1,2 @@
-var e = require('child_process').exec;
-e('cd '+__dirname+' && npm install');
+var e = require('child_process').execSync;
+console.log(e('cd '+__dirname+' && npm install',{encoding:'utf-8'}));
