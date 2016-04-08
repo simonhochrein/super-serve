@@ -42,24 +42,24 @@ if(params.help == true){
 
     switch(type){
       case "js":
-        var result = e("node_modules/.bin/babel src   -d dist/ --presets es2015,stage-0 -s", {encoding:'utf-8'});
+        var result = e(__dirname+"/node_modules/.bin/babel src   -d dist/ --presets es2015,stage-0 -s", {encoding:'utf-8'});
         console.log(" | ".yellow+getResult(result).grey);
         break;
       case "less":
-        var result = e("node_modules/.bin/lessc -x "+file+" "+str+".css --source-map", {encoding:'utf-8'});
+        var result = e(__dirname+"/node_modules/.bin/lessc -x "+file+" "+str+".css --source-map", {encoding:'utf-8'});
         console.log(" | ".yellow+getResult(result).grey);
         break;
       case "coffee":
-        var result = e("node_modules/.bin/coffee --compile -m --output dist/"+filepath+" "+file, {encoding:'utf-8'});
+        var result = e(__dirname+"/node_modules/.bin/coffee --compile -m --output dist/"+filepath+" "+file, {encoding:'utf-8'});
         console.log(" | ".yellow+getResult(result).grey);
         break;
       case "scss":
       case "sass":
-        var result = e("node_modules/.bin/node-sass "+file+" "+str+".css --source-map true --source-map-contents sass", {encoding:'utf-8'});
+        var result = e(__dirname+"/node_modules/.bin/node-sass "+file+" "+str+".css --source-map true --source-map-contents sass", {encoding:'utf-8'});
         console.log(" | ".yellow+getResult(result).grey);
         break;
       case "jade":
-        var result = e('node_modules/.bin/jade '+file+' --out dist/'+filepath, {encoding:'utf-8'});
+        var result = e(__dirname+'/node_modules/.bin/jade '+file+' --out dist/'+filepath, {encoding:'utf-8'});
         console.log(" | ".yellow+getResult(result).grey);
         break;
       case "html":
