@@ -1,6 +1,6 @@
 {
   "name": "super-serve",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,18 @@
   },
   "bin": {
     "super-serve": "./index.js"
-  }
+  },
+  "repository": { 
+    "type": "git",
+    "url": "http://github.com/simonhochrein/super-serve"
+  },
+  "keywords": [
+    "server",
+    "compiler",
+    "coffeescript",
+    "jade",
+    "less",
+    "scss",
+    "watch"
+  ],
 }
