@@ -1,0 +1,6 @@
+{
+  "name": "Super-Serve",
+  "tagline": "Compiles Jade, Coffeescript, Less, SCSS, and Babel, from a source directory to a distribution directory.",
+  "body": "# SUPER SERVE!!!\r\n\r\n\r\nCompiles Jade, Coffeescript, Less, SCSS, and Babel, from a source directory to a distribution directory.\r\n\r\n#### To install:\r\n\r\n```\r\nnpm i -g super-serve\r\n```\r\n#### Create a directory called ```src``` then run:\r\n```\r\nsuper-serve\r\n```\r\n\r\nThe ```super-serve``` command will compile anything in the ```src``` directory to the ```dist``` directory\r\n\r\nSuper Serve uses web sockets, keeping your browser in sync with any changes to your code.\r\n\r\nSuper Serve will compile after it detects a file change in the ```src``` directory. \r\n\r\nFor more options run ```super-serve -h```\r\n\r\n#### Options:\r\n```\r\n  -p, --port number    \r\n  --host string        \r\n  -h, --help  \r\n```\r\nSuper Serve listens to port 8080 by default.\r\n\r\nExample with all options: ```super-serve -p 8081 --host YOUR_HOST_HERE```\r\n\r\nPull Requests are welcome http://github.com/simonhochrein/super-serve\r\n\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
